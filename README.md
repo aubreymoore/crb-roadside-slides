@@ -2,8 +2,9 @@
 
 This repo contains a reveal.js slide deck for a presentation I made at an annual meeting of the CRB-G Action Group.
 
-Citation (bibtex):
+The slides are online at https://aubreymoore.github.io/crb-roadside-slides.
 
+Citation (bibtex):
 ```
 @unpublished{moore2020,
 title= {Automated roadside video surveys for detecting and monitoring coconut rhinoceros beetle damage to coconut palms},
