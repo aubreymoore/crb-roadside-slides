@@ -11,7 +11,7 @@ title= {Automated roadside video surveys for detecting and monitoring coconut rh
 author = {Moore, Aubrey and Jackson, Trevor},
 year = {2020},
 date = {2020-12-09},
-note= {Annual Meeting of the CRB-G Action Group},
+note= {Presented at the Annual Meeting of the CRB-G Action Group},
 URL= {https://aubreymoore.github.io/crb-roadside-slides},
 }
 ```
