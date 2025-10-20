@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js – The HTML Presentation Framework</title>
+
+	<meta name="description" content="Automated roadside surveys for CRB damage">
+	<meta name="author" content="Aubrey Moore">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+	<!-- Custom styles for this presentation -->
+
+	<style>
+		section table,
+		section th,
+		section td {
+			border: 1px solid white;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+
+
+		<div class="slides">
+
+			<section>
+				<h3>Automated roadside video surveys for detecting and monitoring coconut rhinoceros beetle damage to coconut palms</h3>
+				<br>
+				<a href="mailto://aubreymoore@triton.uog.edu">Aubrey Moore</a> University of Guam<br>
+				<a href="mailto:trevor.jackson@agresearch.co.nz">Trevor Jackson</a> AgResearch New Zealand
+				<br/><br/>
+				<hr/>
+				CRB Action Group Webinar | December 9, 2020
+				<br>
+				<a href="https://aubreymoore.github.io/crb-roadside-slides/2025.html">https://aubreymoore.github.io/crb-roadside-slides/2025.html</a>
+			</section>
+
+			<section data-background="images/lifecycle.png" data-background-size="contain">
+			</section>
+
+			<section data-background="images/dying_coconuts.png" data-background-size="contain">
+			</section>
+
+			<section>
+				<h3>We need standardized surveys of CRB damage</h3>
+				<ul>
+					<li>to monitor changes over time and space, especially in response to control activities</li>
+					<li>for early detection of CRB in new geographic areas</li>
+				</ul>
+			</section>
+
+			<!--
+<section>
+<iframe width="955" height="537" src="https://www.youtube.com/embed/_doMxC5ACes"></iframe>
+</section>
+
+<section>
+<iframe width="955" height="537" src="https://www.youtube.com/embed/zzSorqcmt9U"></iframe>
+</section>
+-->
+
+			<section data-background="images/jackson5.jpg" data-background-size="contain">
+			</section>
+
+			<section>
+				<h3>Jackson 5-level CRB damage index</h3>
+				<table>
+					<tr>
+						<td>0</td>
+						<td>Zero</td>
+						<td>No CRB damage symptoms evident</td>
+					</tr>
+				</table>
+				<img data-src="images/j5index0.png" height="500">
+			</section>
+
+			<section>
+				<h3>Jackson 5-level CRB damage index</h3>
+				<table>
+					<tr>
+						<td>1</td>
+						<td>Light</td>
+						<td>Notching or tip damage. <20% foliar loss.</td>
+					</tr>
+				</table>
+				<img data-src="images/j5index1.png" height="500">
+			</section>
+
+			<section>
+				<h3>Jackson 5-level CRB damage index</h3>
+				<table>
+					<tr>
+						<td>2</td>
+						<td>Medium</td>
+						<td>Multiple fronds affected. Notching and breakage. 20%-50% frond loss.</td>
+					</tr>
+				</table>
+				<img data-src="images/j5index2.png" height="500">
+			</section>
+
+			<section>
+				<h3>Jackson 5-level CRB damage index</h3>
+				<table>
+					<tr>
+						<td>3</td>
+						<td>High</td>
+						<td>Multpile fronds affected. Notching and breakage. >50% frond loss.<20% foliar loss.</td>
+					</tr>
+				</table>
+				<img data-src="images/j5index3.png" height="400">
+			</section>
+
+			<section>
+				<h3>Jackson 5-level CRB damage index</h3>
+				<table>
+					<tr>
+						<td>4</td>
+						<td>Non-recoverable</td>
+						<td>Palm dead with growing point destroyed.</td>
+					</tr>
+				</table>
+				<img data-src="images/j5index4.png" height="500">
+			</section>
+
+			<section>
+				<h3>Data Acquisition Options</h3>
+				<ul>
+					<li>direct observations</li>
+					<li>still images</li>
+					<li>videos</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Advantages of using videos over still images</h3>
+				<ul>
+					<li>Rapid acquisition of continuous data over large areas</li>
+					<li>Individual palms are viewed multiple times, from multiple angles</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Data acquisition</h3>
+				<img data-src="images/car.jpg" height="500">
+				<br>
+				<ul>
+					<li>OpenCamera app</li>
+					<li>GPSLogger app</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Data processing</h3>
+				<img data-src="images/syschart.png" height="600">
+			</section>
+
+			<section data-background-iframe="https://aubreymoore.github.io/new-crb-damage-map" data-background-interactive data-preload>
+			</section>
+
+			<section data-background="images/qgis-royal-palms-area.png" data-background-size="contain">
+			</section>
+
+			<section data-background="images/qgis-royal-palms-area-vcuts.png" data-background-size="contain">
+			</section>
+
+			<section data-background-video="images/royal-palms-clip2.mp4">
+			</section>
+
+			<section>
+				<h3>Evaluation of Survey Results</h3>
+				<p>100 of 175,000 tree objects selected randomly</p>
+				<img data-src="images/batch1.png" height="550">
+			</section>
+
+			<section>
+				<h3>Evaluation of Survey Results</h3>
+				<p>100 selected tree objects extracted from videos</p>
+				<img data-src="images/turkle-screenshot.png" height="550">
+			</section>
+
+			<section>
+				<h3>Evaluation of Survey Results</h3>
+				<p>100 selected tree objects classified by human</p>
+				<img data-src="images/cm_before.png" height="550">
+			</section>
+
+			<section>
+				<h3>Rules for for Combining Results from Object Detectors</h3>
+				<table>
+					<tr>
+						<th style='text-align:center'>TreeObj Damage Index</th>
+						<th style='text-align:center'>VcutObj Count</th>
+						<th style='text-align:center'>Modified Damage Index</th>
+					</tr>
+					<tr>
+						<td style='text-align:center'>0</td>
+						<td style='text-align:center'>&gt;0</td>
+						<td style='text-align:center'>1</td>
+					</tr>
+					<tr>
+						<td style='text-align:center'>1,2</td>
+						<td style='text-align:center'>0</td>
+						<td style='text-align:center'>0</td>
+					</tr>
+				</table>
+				</section>
+
+			<section>
+				<h3>Evaluation of Survey Results</h3>
+				<p>After modifying damage indices using v-cut counts</p>
+				<img data-src="images/cm_after.png" height="550">
+			</section>
+
+			<section>
+				<h3>Future Prospects</h3>
+				<img data-src="images/DJI_0149.JPG" height="600">
+			</section>
+
+			<section>
+				<h3>Acknowledgments</h3>
+				Thanks to:
+				<ul>
+					<li>Don Scott, Savan Visalpara, and Rush Tehrani at OnePanel Incorporated for developing the object detectors and workflow.</li>
+					<li>Christian Cayanan for doing the surveys.</li>
+			</section>
+
+			<section>
+				<h3>FINIS</h3>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// Also available as an ES module, see:
+		// https://revealjs.com/initialization/
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+			transition: "none",
+			slideNumber: 'c/t',
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+		});
+	</script>
+
+</body>
+
+</html>
