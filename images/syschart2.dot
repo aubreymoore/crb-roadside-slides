@@ -1,0 +1,24 @@
+// System chart made using graphviz
+
+// Execute using:  dot -Tpng -o syschart2.png syschart2.dot
+
+digraph {
+  node [shape=box label="" fontsize="32" fontname="arial"];
+  rankdir = LR;
+
+  videos  [label=< <table border="0"><tr><td>Images (1920x1080) @ 1 FPS</td></tr><tr><td><img src="videos.png"/></td></tr></table> >];
+  ai      [label=< <table border="0"><tr><td>Object detectors</td></tr><tr><td><img src="ai.png"/></td></tr></table> >];
+  db      [label=< <table border="0"><tr><td>SpatiaLite database</td></tr><tr><td><img src="db.png"/></td></tr></table> >];
+  gis     [label=< <table border="0"><tr><td>Quantum GIS</td></tr><tr><td><img src="gis.png"/></td></tr></table> >];
+  webmap  [label=< <table border="0"><tr><td>Web map</td></tr><tr><td><img src="webmap.png"/></td></tr></table> >];
+
+  videos -> ai;
+  ai -> db;
+  db -> gis;
+  gis -> webmap;
+
+  subgraph one {rank="same" videos ai}
+  subgraph two {rank="same" gis webmap}
+
+}
+
