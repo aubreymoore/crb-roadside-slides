@@ -29,6 +29,10 @@
 		section td {
 			border: 1px solid white;
 		}
+		.bold-yellow {
+    		font-weight: bold;
+    		color: yellow;
+  }
 	</style>
 </head>
 
@@ -209,13 +213,28 @@
 			</section>
 
 			<section data-markdown>
-				#### Rota survey 
+				#### Rota survey
+				- Two v-shaped cuts were detected and reported using iNaturalist 
+				[1](https://www.inaturalist.org/observations/69576984), [2](https://www.inaturalist.org/observations/69534809).
+
+				![Rota1](images/Rota1.png)
 			</section>
 
 			<section data-markdown>
 				#### Majuro survey 2023-10-07
-				- [tech report](https://aubreymoore.github.io/Majuro-tech-report-20231201/Majuro-tech-report.pdf)
-				- [interactive web map](https://aubreymoore.github.io/Majuro-CRB-damage-map-1/webmap/#12/7.1082/171.2072)
+				[tech report](https://aubreymoore.github.io/Majuro-tech-report-20231201/Majuro-tech-report.pdf) | 
+				[interactive web map](https://aubreymoore.github.io/Majuro-CRB-damage-map-1/webmap/#12/7.1082/171.2072)
+				- Three vcuts were detected
+				![](images/majuro-webmap.png)
+			</section>
+
+			<section>
+				<h3>Recent model improvements</h3>
+				<ul>
+					<li>added <span class="bold-yellow">confidence score</span> for each detected object
+					<li>changed base model<br>from <span class="bold-yellow">Faster R-CNN</span> to <span class="bold-yellow">YOLOv11</span>
+					<li>changed object type<br>from <span class="bold-yellow">bounding boxes (rectangles)</span> to <span class="bold-yellow">segmentation (polygons)</span>
+				</ul>
 			</section>
 
 			<!-- smart phone demo app -->
@@ -224,11 +243,39 @@
 			</section>
 
 			<section data-markdown>
+				#### Comparison of damage surveys and pheromone trapping
+				- Estimated cost of island-wide CRB monitoring using automated damage surveys is an order of magnitude cheaper than pheromone traps.
+				![](images/pheromone-vs-roadside-costs.png)
+			</section>
+
+			<section data-markdown>
+				#### Comparison of damage surveys and pheromone trapping
+				- The relationship between CRB trap catch and CRB population density is unknown.
+				- Theoretically, trap catch approaches zero at high population density.
+				- Damage levels are probably better correlated with population density. 
+
+				[Click here to see why trap catch may be uncorrelated with population density.](https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html)
+			</section>
+
+			<section data-markdown>
+				#### Comparison of ground-based and aerial damage surveys
+				- aerial surveys provide precise coordinates; ground-based surveys provide approximate coordinates
+				- aerial surveys can be used anywhere except in no-fly zones; ground-based surveys can be used anywhere there are roads
+				- aerial surveys are expensive and hi-tech; ground-base surveys are cheap and low-tech
+			</section>
+
+			<section data-markdown>
 				#### Public Access to Data and Code
 				- Internet Archive: [Images from six automated roadside surveys of CRB damage on Guam (about 96 GB)](https://archive.org/search?query=aubreymoore2013)
 				- Internet Archive: [Images from automated roadside survey of CRB damage on Majuro (14 GB)](https://archive.org/details/MajuroO1-2025-08-11)
 				- GitHub: [YOLOv11 instance segmentation training datasets and trained models](https://github.com/aubreymoore/crb-damage-detection-models)
 				- Colab: [Detect CRB damage using the latest model](https://colab.research.google.com/github/aubreymoore/crb-damage-detector-colab/blob/main/detect_and_annotate.ipynb)
+			</section>
+
+			<section data-markdown>
+				#### Virtual Damage Surveys
+				CRB damage in Mexico?
+				![](images/crb-mexico.jpg)
 			</section>
 
 
@@ -289,12 +336,6 @@
 				<h3>Future Prospects</h3>
 				<img data-src="images/DJI_0149.JPG" height="600">
 			</section>
--->
-			<section data-markdown>
-				#### Pros and Cons of ground and aerial surveys
-			</section>
-
-
 
 			<section>
 				<h3>Acknowledgments</h3>
@@ -305,9 +346,9 @@
 					<li>Mark Manglona for doing the survey on Rota.</li>
 				</ul>
 			</section>
-
+		-->
 			<section data-markdown>
-				[Click here to see references.](2025_refs.html)
+				[References](2025_refs.html)
 			</section>
 
 			<section>			
