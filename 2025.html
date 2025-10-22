@@ -29,10 +29,11 @@
 		section td {
 			border: 1px solid white;
 		}
-		.bold-yellow {
-    		font-weight: bold;
-    		color: yellow;
-  }
+		.bold-yellow {font-weight: bold; color: yellow;}	
+		.img_left {
+			float: left;
+			margin-right: 20px;
+		}
 	</style>
 </head>
 
@@ -46,7 +47,7 @@
 		<div class="slides">
 
 			<section>
-				<h3>Improving an AI Model for Automated Roadside CRB Damage Surveys</h3>
+				<h3 style="color: #FFFF00">Improving an AI Model for Automated Roadside CRB Damage Surveys</h3>
 				<br>
 				<a href="mailto://aubreymoore@triton.uog.edu">Aubrey Moore</a><br>University of Guam<br>
 				<hr/>
@@ -57,20 +58,13 @@
 				</font>
 			</section>
 
-			<section data-background="images/vcuts.png" data-background-size="contain">
-			</section>
-
-			<section data-background="images/dying_coconuts.png" data-background-size="contain">
-			</section>
-
 			<section>
-				<h3>We need standardized<br>CRB damage surveys</h3>
+				<h3 style="color: #FFFF00">We need standardized<br>  CRB damage surveys</h3>
 				<ul>
 					<li>for <font color="yellow">monitoring</font> changes over time and space, especially in response to control activities</li>
 					<li>for <font color="yellow">detection</font> of CRB in new geographic areas</li>
 				</ul>
 			</section>
-
 
 <!--
 <section>
@@ -80,7 +74,7 @@
 <section>
 <iframe width="955" height="537" src="https://www.youtube.com/embed/zzSorqcmt9U"></iframe>
 </section>
--->
+
 
 			<section data-background="images/jackson5.jpg" data-background-size="contain">
 			</section>
@@ -144,15 +138,15 @@
 				</table>
 				<img data-src="images/j5index4.png" height="500">
 			</section>
-
-			<section>
-				<h3>Data Acquisition Options</h3>
-				<ul>
-					<li>direct visual observations</li>
-					<li>videos or still images</li>
-					<li>ground-based or aerial imagery</li>
-				</ul>
-			</section>
+		-->
+		<section>
+			<h3 style="color: #FFFF00;">Data Acquisition Options for CRB Damage Surveys</h3>
+			<ul>
+				<li>direct visual observations</li>
+				<li>videos or still images</li>
+				<li>ground-based or aerial imagery</li>
+			</ul>
+		</section>
 <!--
 			<section>
 				<h3>Advantages of using videos over still images</h3>
@@ -162,122 +156,111 @@
 				</ul>
 			</section>
 -->
-			<section>
-				<h3>Automated data acquisition</h3>
-				<img data-src="images/car.jpg" height="500">
-				<br>
-				<ul>
-					<li>OpenCamera app</li>
-					<li>GPSLogger app</li>
-				</ul>
-			</section>
-
-			<section>
-				<h3>Data processing (revised)</h3>
-				<img data-src="images/syschart2.png" height="600">
-			</section>
-
-			<section data-background-iframe="https://aubreymoore.github.io/new-crb-damage-map" data-background-interactive data-preload>
-			</section>
-
-			<section data-background="images/qgis-royal-palms-area.png" data-background-size="contain">
-			</section>
-
-			<section data-background="images/qgis-royal-palms-area-vcuts.png" data-background-size="contain">
-			</section>
-
-			<section data-background-video="images/royal-palms-clip2.mp4">
-			</section>
-
-			<section data-markdown>
-				- Ten island-wide roadside surveys were done on Guam between 2020-10-22 and 2023-09-22.
-				- Results showed changes in percent of palms damaged over time:
-				![](images/crb_damage_trends.png)
-			</section>
-
-			<section data-markdown>
-				#### Rota survey 2020-10-29
-				- Two v-shaped cuts were detected and reported using iNaturalist 
-				[1](https://www.inaturalist.org/observations/69576984), [2](https://www.inaturalist.org/observations/69534809).
-
-				![Rota1](images/Rota1.png)
-			</section>
-
-			<section data-markdown>
-				#### Majuro survey 2023-10-07
-				[tech report](https://aubreymoore.github.io/Majuro-tech-report-20231201/Majuro-tech-report.pdf) | 
-				[interactive web map](https://aubreymoore.github.io/Majuro-CRB-damage-map-1/webmap/#12/7.1082/171.2072)
-				- Three vcuts were detected
-				![](images/majuro-webmap.png)
-			</section>
-
-			<section data-markdown>
-				#### Virtual Damage Surveys
-				CRB damage in Mexico?
-				![](images/crb-mexico.jpg)
-			</section>
-
-			<section>
-				<h3>Recent model improvements</h3>
-				<ul>
-					<li>added <span class="bold-yellow">confidence score</span> for each detected object
-					<li>changed base model<br>from <span class="bold-yellow">Faster R-CNN</span> to <span class="bold-yellow">YOLOv11</span>
-					<li>changed object type<br>from <span class="bold-yellow">bounding boxes (rectangles)</span> to <span class="bold-yellow">segmentation (polygons)</span>
-				</ul>
-			</section>
-
-			<!-- smart phone demo app -->
-			<section>
-				<video  data-autoplay src="videos/screencast_h772.mp4"></video>
-			</section>
-
-
 			
+<section>
+	<h3 style="color: #FFFF00;">Data acquisition for automated ground-based CRB damage surveys</h3>
+	<img data-src="images/car.jpg" height="500">
+</section>
 
 
+<section>
+	<h3>Data processing (revised)</h3>
+	<img data-src="images/syschart2.png" height="600">
+</section>
 
+<section data-background="images/crb-webmap-2020-12.png" data-background-size="contain">
+</section>
 
+<section data-background="images/qgis-royal-palms-area.png" data-background-size="contain">
+</section>
 
+<section data-background="images/qgis-royal-palms-area-vcuts.png" data-background-size="contain">
+</section>
 
+<section data-background-video="images/royal-palms-clip2.mp4">
+</section>
 
-			<section data-markdown>
-				#### Comparison of damage surveys and pheromone trapping
-				- Estimated cost of island-wide CRB monitoring using automated damage surveys is an order of magnitude cheaper than pheromone traps.
-				![](images/pheromone-vs-roadside-costs.png)
-			</section>
+<section data-markdown>
+	- Ten island-wide roadside surveys were done on Guam between 2020-10-22 and 2023-09-22.
+	- [Webmaps and data are available online](https://aubreymoore.github.io/Guam-CRB-web-maps).
+	- Results showed changes in percent of palms damaged over time:
+	![](images/crb_damage_trends.png)
+</section>
 
-			<section data-markdown>
-				#### Comparison of damage surveys and pheromone trapping
-				- The relationship between CRB trap catch and CRB population density is unknown.
-				- Theoretically, trap catch approaches zero at high population density.
-				- Damage levels are probably better correlated with population density. 
+<section>
+	<h3>Detection surveys</h3>
+</section>
 
-				[Click here to see why trap catch may be uncorrelated with population density.](https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html)
-			</section>
+<section data-markdown>
+	#### Rota survey 2020-10-29
+	- Two v-shaped cuts were detected and reported using iNaturalist 
+	[1](https://www.inaturalist.org/observations/69576984), [2](https://www.inaturalist.org/observations/69534809).
 
-			<section data-markdown>
-				#### Comparison of ground-based and aerial damage surveys
-				- aerial surveys provide precise coordinates; ground-based surveys provide approximate coordinates
-				- aerial surveys can be used anywhere except in no-fly zones; ground-based surveys can be used anywhere there are roads
-				- aerial surveys are expensive and hi-tech; ground-base surveys are cheap and low-tech
-			</section>
+	![Rota1](images/Rota1.png)
+</section>
 
-			<section data-markdown>
-				#### Public Access to Data and Code
-				- Internet Archive: [Images from six automated roadside surveys of CRB damage on Guam (about 96 GB)](https://archive.org/search?query=aubreymoore2013)
-				- Internet Archive: [Images from automated roadside survey of CRB damage on Majuro (14 GB)](https://archive.org/details/MajuroO1-2025-08-11)
-				- GitHub: [YOLOv11 instance segmentation training datasets and trained models](https://github.com/aubreymoore/crb-damage-detection-models)
-				- Colab: [Detect CRB damage using the latest model](https://colab.research.google.com/github/aubreymoore/crb-damage-detector-colab/blob/main/detect_and_annotate.ipynb)
-			</section>
+<section data-markdown>
+	#### Majuro survey 2023-10-07
+	[tech report](https://aubreymoore.github.io/Majuro-tech-report-20231201/Majuro-tech-report.pdf) | 
+	[interactive web map](https://aubreymoore.github.io/Majuro-CRB-damage-map-1/webmap/#12/7.1082/171.2072)
+	- Three vcuts were detected
+	![](images/majuro-webmap.png)
+</section>
 
-			
+<section><h3>virtual surveys</h3></section>
 
+<section data-markdown>
+	- Jackson TJ et al. 2022. [Social media posts suggest that coconut rhinoceros beetle has established in the Western hemisphere.](https://doi.org/10.1111/jen.13083)</font>
+	- Jackson, TJ et al. 2025. [Coconut rhinoceros beetle *Oryctes rhinoceros* confirmed in the Americas.](https://doi.org/10.1111/epp.70014)
 
+	![](images/crb-mexico.jpg)
+</section>
 
+<section>
+	<h3>Recent model improvements</h3>
+	<ul>
+		<li>added <span class="bold-yellow">confidence score</span> for each detected object
+		<li>changed base model<br>from <span class="bold-yellow">Faster R-CNN</span> to <span class="bold-yellow">YOLOv11</span>
+		<li>changed object type<br>from <span class="bold-yellow">bounding boxes (rectangles)</span> to <span class="bold-yellow">segmentation (polygons)</span>
+	</ul>
+</section>
 
+<!-- smart phone demo app -->
+<section>
+	<video  data-autoplay src="videos/screencast_h772.mp4"></video>
+</section>
 
+<section><h3>concluding comments</h3></section>
 
+<section data-markdown>
+	#### Comparison of damage surveys and pheromone trapping
+	- Estimated cost of island-wide CRB monitoring using automated damage surveys is an order of magnitude cheaper than pheromone traps.
+	![](images/pheromone-vs-roadside-costs.png)
+</section>
 
+<section data-markdown>
+	#### Comparison of damage surveys and pheromone trapping (continued)
+	- The relationship between CRB trap catch and CRB population density is unknown.
+	- Theoretically, trap catch approaches zero at high population density.
+	- Damage levels are probably better correlated with population density. 
+
+	[Click here to see why trap catch may be uncorrelated with population density.](https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html)
+</section>
+
+<section data-markdown>
+	#### Comparison of ground-based and aerial damage surveys
+	- aerial surveys provide precise coordinates; ground-based surveys provide approximate coordinates
+	- aerial surveys can be used anywhere except in no-fly zones; ground-based surveys can be used anywhere there are roads
+	- aerial surveys are expensive and hi-tech; ground-base surveys are cheap and low-tech
+</section>
+
+<section data-markdown>
+	#### Public Access to Data and Code
+	- Internet Archive: [Images from six automated roadside surveys of CRB damage on Guam (about 96 GB)](https://archive.org/search?query=aubreymoore2013)
+	- Internet Archive: [Images from automated roadside survey of CRB damage on Majuro (14 GB)](https://archive.org/details/MajuroO1-2025-08-11)
+	- GitHub: [YOLOv11 instance segmentation training datasets and trained models](https://github.com/aubreymoore/crb-damage-detection-models)
+	- Colab: [Detect CRB damage using the latest model](https://colab.research.google.com/github/aubreymoore/crb-damage-detector-colab/blob/main/detect_and_annotate.ipynb)
+</section>
 
 <!--
 			<section>
@@ -332,30 +315,30 @@
 
 		-->
 
-			<section>
-				<h3>Acknowledgments</h3>
-				Thanks to:
-				<ul>
-					<li>The <span class="bold-yellow">US Forest Service</span> and the <span class="bold-yellow">US Department of the Interior - Office of Insylar Affairs</span> for initial funding.</li>
-					<li><span class="bold-yellow">Don Scott, Savan Visalpara, and Rush Tehrani</span> at OnePanel Incorporated for developing the original object detectors and workflow.</li>
-					<li><span class="bold-yellow"></span>Christian Cayanan</span> for doing the 10 surveys on Guam and one on Majuro.</li>
-					<li><span class="bold-yellow">Mark Manglona</span> for doing the survey on Rota.</li>
-				</ul>
-			</section>
-		
-			<section data-markdown>
-				[References](2025_refs.html)
-			</section>
+<section>
+	<h3>Acknowledgments</h3>
+	Thanks to:
+	<ul>
+		<li>The <span class="bold-yellow">US Forest Service</span> and the <span class="bold-yellow">US Department of the Interior - Office of Insular Affairs</span> for initial funding.</li>
+		<li><span class="bold-yellow">Don Scott, Savan Visalpara, and Rush Tehrani</span> at OnePanel Incorporated for developing the original object detectors and workflow.</li>
+		<li><span class="bold-yellow">Christian Cayanan</span> for doing the 10 surveys on Guam and one on Majuro.</li>
+		<li><span class="bold-yellow">Mark Manglona</span> for doing the survey on Rota.</li>
+	</ul>
+</section>
 
-			<section>			
-				<h3>FINIS</h3>
-			</section>
+<section data-markdown>
+	[References](2025_refs.html)
+</section>
 
-			<section>Extra slides</section>
+<section>			
+	<h3>FINIS</h3>
+</section>
 
-			<section>
-				<img data-src='images/timeline.png', width="1200">
-			</section>
+<section>Extra slides</section>
+
+<section>
+	<img data-src='images/timeline.png', width="1200">
+</section>
 
 		</div>
 
