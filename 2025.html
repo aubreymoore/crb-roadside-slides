@@ -46,6 +46,8 @@
 
 		<div class="slides">
 
+<!--------------------------------------------------------------------------------------------------------------------------------->
+
 			<section>
 				<h3 style="color: #FFFF00">Improving an AI Model for Automated Roadside CRB Damage Surveys</h3>
 				<br>
@@ -153,24 +155,13 @@
 	![](images/damage_index.png)
 </section>	
 	
-	<!--
-			<section>
-				<h3>Advantages of using videos over still images</h3>
-				<ul>
-					<li>Rapid acquisition of continuous data over large areas</li>
-					<li>Individual palms are viewed multiple times, from multiple angles</li>
-				</ul>
-			</section>
--->
-			
 <section>
 	<h3 style="color: #FFFF00;">Data acquisition for automated ground-based CRB damage surveys</h3>
 	<img data-src="images/car.jpg" height="500">
 </section>
 
-
 <section>
-	<h3>Data processing (revised)</h3>
+	<h3 style="color: #FFFF00;">Data processing</h3>
 	<img data-src="images/syschart2.png" height="600">
 </section>
 
@@ -198,15 +189,14 @@
 </section>
 
 <section data-markdown>
-	#### Rota survey 2020-10-29
+	### Rota survey 2020-10-29</h3>
 	- Two v-shaped cuts were detected and reported using iNaturalist 
 	[1](https://www.inaturalist.org/observations/69576984), [2](https://www.inaturalist.org/observations/69534809).
-
 	![Rota1](images/Rota1.png)
 </section>
 
 <section data-markdown>
-	#### Majuro survey 2023-10-07
+	### Majuro survey 2023-10-07
 	[tech report](https://aubreymoore.github.io/Majuro-tech-report-20231201/Majuro-tech-report.pdf) | 
 	[interactive web map](https://aubreymoore.github.io/Majuro-CRB-damage-map-1/webmap/#12/7.1082/171.2072)
 	- Three vcuts were detected
@@ -225,7 +215,7 @@
 <section>
 	<h3>Recent model improvements</h3>
 	<ul>
-		<li>added <span class="bold-yellow">confidence score</span> for each detected object
+		<li>added a <span class="bold-yellow">confidence score</span> for each detected object
 		<li>changed base model<br>from <span class="bold-yellow">Faster R-CNN</span> to <span class="bold-yellow">YOLOv11</span>
 		<li>changed object type<br>from <span class="bold-yellow">bounding boxes (rectangles)</span> to <span class="bold-yellow">segmentation (polygons)</span>
 	</ul>
@@ -244,32 +234,50 @@
 	![](images/20210824_094010_annotated.jpg)
 </section>
 
-<section><h3>concluding comments</h3></section>
-
-<section data-markdown>
-	#### Comparison of damage surveys and pheromone trapping
-	- Estimated cost of island-wide CRB monitoring using automated damage surveys is an order of magnitude cheaper than pheromone traps.
-	![](images/pheromone-vs-roadside-costs.png)
+<section>
+	<h3>concluding comments</h3>
 </section>
 
 <section data-markdown>
-	#### Comparison of damage surveys and pheromone trapping (continued)
+	### Comparison of damage surveys and pheromone trapping
+
+	- Estimated cost of island-wide CRB monitoring using automated damage surveys is an order of magnitude cheaper than pheromone traps.
+
+	![](images/pheromone-vs-roadside-costs.png)
+</section>
+
+<!--
+<section data-markdown> 
+	### Comparison of damage surveys and pheromone trapping (continued)
+
 	- The relationship between CRB trap catch and CRB population density is unknown.
 	- Theoretically, trap catch approaches zero at high population density.
 	- Damage levels are probably better correlated with population density. 
 
-	[Click here to see why trap catch may be uncorrelated with population density.](https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html)
+	[Click here to see why CRB trap catch may be uncorrelated with population density.](https://aubreymoore.github.io/trap-catch-model/reveal.js/plumes_audio.html)
+</section>
+-->
+
+<section data-markdown>
+	### Comparison of damage surveys and pheromone trapping (continued)
+
+	- The relationship between CRB trap catch and CRB population density is unknown.
+	- Theoretically, trap catch approaches zero at high population density.
+	- Damage levels are probably better correlated with population density. 
+
 </section>
 
 <section data-markdown>
-	#### Comparison of ground-based and aerial damage surveys
-	- aerial surveys provide precise coordinates; ground-based surveys provide approximate coordinates
-	- aerial surveys can be used anywhere except in no-fly zones; ground-based surveys can be used anywhere there are roads
-	- aerial surveys are expensive and hi-tech; ground-base surveys are cheap and low-tech
+### Comparison of ground-based and aerial damage surveys
+
+- aerial surveys provide precise coordinates; ground-based surveys provide approximate coordinates
+- aerial surveys can be used anywhere except in no-fly zones; ground-based surveys can be used anywhere there are roads
+- aerial surveys are expensive and hi-tech; ground-base surveys are cheap and low-tech
 </section>
 
 <section data-markdown>
 	#### Public Access to Data and Code
+
 	- Internet Archive: [Images from six automated roadside surveys of CRB damage on Guam (about 96 GB)](https://archive.org/search?query=aubreymoore2013)
 	- Internet Archive: [Images from automated roadside survey of CRB damage on Majuro (14 GB)](https://archive.org/details/MajuroO1-2025-08-11)
 	- GitHub: [YOLOv11 instance segmentation training datasets and trained models](https://github.com/aubreymoore/crb-damage-detection-models)
@@ -340,10 +348,6 @@
 	</ul>
 </section>
 
-<section data-markdown>
-	[References](2025_refs.html)
-</section>
-
 <section>			
 	<h3>FINIS</h3>
 </section>
@@ -353,6 +357,8 @@
 <section>
 	<img data-src='images/timeline.png', width="1200">
 </section>
+
+<!------------------------------------------------------------------------------------------>
 
 		</div>
 
